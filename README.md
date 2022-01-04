@@ -1,2 +1,2 @@
 # CodingNinjas_Java_DSA
-Contains solutions of CodingNinjas Java+DSA course
+Solutions of CodingNinjas Java+DSA course
