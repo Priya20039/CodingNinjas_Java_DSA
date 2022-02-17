@@ -61,3 +61,82 @@ public class Solution {
         return (-1);
     }
 }
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+
+By Using Main method :-
+
+
+
+
+import java.util.Scanner;
+
+public class LinearSearch {
+
+	
+	public static int Linearsearch(int arr[],int ele){
+		
+		for(int i=0; i<arr.length; i++) {
+			
+			if(arr[i] == ele) {
+				System.out.println("Element is found at location: "+i);
+				return i;
+			}
+			
+		}
+		System.out.println("Element you are trying to search is not available in array");
+		return -1;
+		
+	}
+	
+	
+	
+	
+	
+	public static int[] takeInput() {
+		
+        Scanner s = new Scanner(System.in);
+		
+		System.out.println("Enter size of array: ");
+		int size = s.nextInt();
+		int arr[] = new int[size];
+		
+		System.out.println("Enter elements in array: ");
+		for(int i=0; i<size; i++) {
+			
+			arr[i] = s.nextInt();
+		}
+		
+		return arr;
+	}
+	
+	
+	
+	public static int ele(int arr[]) {
+		
+		Scanner s = new Scanner(System.in);
+		System.out.println("Enter element to search :");
+		int ele = s.nextInt();
+		
+		return ele;
+		
+		
+	}
+	
+	
+	
+	
+	
+	public static void main(String args[]) {
+		
+		int arr[] = takeInput();
+		int x = ele(arr);
+		int Search = Linearsearch(arr,x);
+		
+		
+	}
+	
+}
